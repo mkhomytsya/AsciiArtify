@@ -121,7 +121,7 @@ wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 # Створення кластеру
 k3d cluster create asciiartify-demo \
   --agents 2 \
-  --port 8080:80@loadbalancer
+  --port 8080:8080@loadbalancer
 
 # Перевірка кластеру
 kubectl cluster-info
@@ -147,7 +147,7 @@ k3d cluster delete asciiartify-demo
 
 ### Візуальна демонстрація
 
-![k3d Demo](to do)
+[![asciicast](https://asciinema.org/a/xXqMEsnTxnrjLJ4LWNeT7pItp.svg)](https://asciinema.org/a/xXqMEsnTxnrjLJ4LWNeT7pItp)
 
 ## Висновки
 
